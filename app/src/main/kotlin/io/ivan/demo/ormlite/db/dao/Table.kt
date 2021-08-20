@@ -29,6 +29,8 @@ class TableDao {
     fun delete(table: Table) = dao.delete(table)
 
     fun queryForAll() = dao.queryForAll()
+//    сортировка по какой колонке какой порядок возр убыв
+//fun queryForAll() = dao.queryBuilder().orderBy()
 
     fun removeAll() {
         for (table in queryForAll()) {
